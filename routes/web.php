@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Frontend\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,6 +52,11 @@ Route::middleware('auth')->prefix('/admin')->group(function () {
     })->middleware(['auth', 'verified'])->name('dashboard');
 });
 
+        Route::get('/',[PagesController::class,'index'])->name('home');
+        Route::get('/testimonial',[PagesController::class,'testimonial'])->name('testimonial');
+        Route::get('/why',[PagesController::class,'why'])->name('why');
+        Route::get('/about-us',[PagesController::class,'about'])->name('about');
+        Route::get('/products',[PagesController::class,'products'])->name('products');
 
 
 Route::middleware('auth')->group(function () {
