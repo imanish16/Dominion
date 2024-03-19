@@ -24,7 +24,7 @@ class PagesController extends Controller
         return view('frontend.about');
     }
 
-    public function testimonials(){
+    public function testimonial(){
         return view('frontend.testimonial');
     }
 }

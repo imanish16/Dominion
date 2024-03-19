@@ -1,6 +1,6 @@
 @extends('layouts.frontend')
 @section('content')
-    <div class="hero_area">
+    {{-- <div class="hero_area">
         <!-- header section strats -->
         <header class="header_section">
             <div class="header_top">
@@ -83,7 +83,7 @@
             </div>
         </header>
         <!-- end header section -->
-    </div>
+    </div> --}}
 
 
 
