@@ -17,7 +17,7 @@ use App\Http\Controllers\Frontend\PagesController;
 */
 
 
-Route::middleware('auth')->prefix('/admin')->group(function () {
+Route::middleware(['auth','check.role'])->prefix('/admin')->group(function () {
 
     /*
       |  Users Routes 

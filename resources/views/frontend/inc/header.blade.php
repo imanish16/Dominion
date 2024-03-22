@@ -1,3 +1,6 @@
+@php
+    $segment1 = Request::segment(1);
+@endphp
 <!DOCTYPE html>
 <html>
 
@@ -32,5 +35,10 @@
     <link href="{{ asset('frontend/minics-html/css/responsive.css') }}" rel="stylesheet" />
 
 </head>
+@if ($segment1 == null)
 
-<body>
+    <body>
+    @else
+
+        <body class="sub_page">
+@endif

@@ -28,7 +28,7 @@
                         </button>
                     </from>
                     <div class="user_option_box">
-                        <a href="" class="account-link">
+                        <a href="{{ route('login') }}" class="account-link">
                             <i class="fa fa-user" aria-hidden="true"></i>
                             <span>
                                 My Account
